@@ -10,10 +10,14 @@ import java.util.TreeMap;
  * @Description: 使用红黑树来模拟hash环
  * @Date: Created in 19:12 2020/4/25
  * @Modified By:
+ *
  */
 public class ConsistentHash {
 
-    private static SortedMap<Integer, String> virtualNodes = new TreeMap<>();
+    private static final SortedMap<Integer, String> virtualNodes = new TreeMap<>();
+    /**
+     * 每个节点一共有10个虚拟节点
+     */
     private static final int VIRTUAL_NODES = 160;
     static {
         //对每个真实节点添加虚拟节点，虚拟节点会根据哈希算法进行散列
@@ -73,7 +77,8 @@ public class ConsistentHash {
 
         // 返回对应的虚拟节点名称
         return subMap.get(nodeIndex);
-
     }
+
+
 
 }

@@ -1,9 +1,6 @@
 package random;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author: panghu
@@ -40,4 +37,22 @@ public class ServerIps {
             WEIGHT_LIST.put("192.168.0.10", 9);
         }
 
-    }
+    /**
+     * 用于存储服务器当前活跃数，LinkedHashMap实现了LRU算法
+     */
+    public static final Map<String, Integer> ACTIVITY_LIST = new LinkedHashMap<>();
+        static {
+            ACTIVITY_LIST.put("192.168.0.1", 2);
+            ACTIVITY_LIST.put("192.168.0.2", 0);
+            ACTIVITY_LIST.put("192.168.0.3", 1);
+            ACTIVITY_LIST.put("192.168.0.4", 3);
+            ACTIVITY_LIST.put("192.168.0.5", 0);
+            ACTIVITY_LIST.put("192.168.0.6", 1);
+            ACTIVITY_LIST.put("192.168.0.7", 4);
+            ACTIVITY_LIST.put("192.168.0.8", 2);
+            ACTIVITY_LIST.put("192.168.0.9", 7);
+            ACTIVITY_LIST.put("192.168.0.10", 3);
+        }
+
+
+}
