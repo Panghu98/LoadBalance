@@ -1,7 +1,9 @@
 package random;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author: panghu
@@ -22,4 +24,20 @@ public class ServerIps {
             "192.168.0.9",
             "192.168.0.10"
             );
-}
+
+    public static final Map<String, Integer> WEIGHT_LIST = new HashMap<String, Integer>();
+        static {
+            // 权重之和为50
+            WEIGHT_LIST.put("192.168.0.1", 1);
+            WEIGHT_LIST.put("192.168.0.2", 8);
+            WEIGHT_LIST.put("192.168.0.3", 3);
+            WEIGHT_LIST.put("192.168.0.4", 6);
+            WEIGHT_LIST.put("192.168.0.5", 5);
+            WEIGHT_LIST.put("192.168.0.6", 5);
+            WEIGHT_LIST.put("192.168.0.7", 4);
+            WEIGHT_LIST.put("192.168.0.8", 7);
+            WEIGHT_LIST.put("192.168.0.9", 2);
+            WEIGHT_LIST.put("192.168.0.10", 9);
+        }
+
+    }
