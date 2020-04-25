@@ -32,5 +32,5 @@
 千万别以为这几个算法看.上去都特别简单，但其实真正在生产上用到时会远比你想的复杂
 
 #### 随机算法-RandomLoadBalance
-[简单实现](random.Random)
+[简单实现](src/random/Random.java)
 
