@@ -188,6 +188,6 @@ AAAAABC，那么如果能够是这么一个结果呢: AABACAA,把B和C平均插�
 - [最小活跃数负载均衡算法实现](src/leastactive/LeastActive.java)
 
 ## 负载均衡总结
-![](.README_images/2a9983e2.png)
+![Y1Wv26.png](https://s1.ax1x.com/2020/05/10/Y1Wv26.png)
 
 相关资料：[http://dubbo.apache.org/zh-cn/docs/source_code_guide/loadbalance.html](http://dubbo.apache.org/zh-cn/docs/source_code_guide/loadbalance.html)
